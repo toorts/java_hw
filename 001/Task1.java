@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
+        try (Scanner scan = new Scanner(System.in)) {
             System.out.print("Enter a number: ");
-            int n = sc.nextInt();
+            int n = scan.nextInt();
+            scan.close();
 
             int triangularNumber = n * (n + 1) / 2;
 
@@ -17,8 +18,6 @@ public class Task1 {
 
             System.out.println("The " + n + "th triangular number is " + triangularNumber);
             System.out.println(n + "! = " + factorial);
-
-            sc.close();
         }
     }
 }

@@ -15,8 +15,10 @@ public class Task3 {
             System.out.println("Enter an operator (+, -, /, *): ");
             char operator = scan.next().charAt(0);
 
+            scan.close();
+
             double result;
-            
+
             switch (operator) {
                 case '+':
                     result = num1 + num2;
@@ -33,6 +35,7 @@ public class Task3 {
                 default:
                     System.out.println("Error! operator is not correct");
                     return;
+
             }
 
             System.out.println("Result: " + num1 + " " + operator + " " + num2 + " = " + result);

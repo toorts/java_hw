@@ -38,6 +38,7 @@ public class Task3 {
             }
 
             System.out.println("\nResult: " + num1 + " " + operator + " " + num2 + " = " + result);
+            // System.out.printf("Result: %f %c %f = %f", num1, operator, num2, result);
         }
     }
 }

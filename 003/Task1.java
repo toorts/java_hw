@@ -10,7 +10,7 @@ public class Task1 {
         Random rand = new Random();
         System.out.print("Список из 10 случайных чисел: ");
         for (int i = 0; i < 10; i++) {
-            int num = rand.nextInt(100) + 1;
+            int num = rand.nextInt(100);
             numbers.add(num);
             System.out.print(num + " ");
         }

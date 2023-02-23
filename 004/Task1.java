@@ -19,7 +19,7 @@ public class Task1 {
 
         // заполнение списка случайными числами
         for (int i = 0; i < 10; i++) {
-            int num = rand.nextInt(100) + 1;
+            int num = rand.nextInt(100);
             list.add(num);
         }
 

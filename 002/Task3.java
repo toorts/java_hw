@@ -19,15 +19,14 @@ public class Task3 {
     }
 
     public static void main(String[] args) {
-        try (Scanner scan = new Scanner(System.in)) {
-            System.out.print("Введите строку: ");
-            String str = scan.nextLine();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String str = scan.nextLine();
 
-            if (isPalindrome(str)) {
-                System.out.println("Это палиндром");
-            } else {
-                System.out.println("Это не палиндром");
-            }
+        if (isPalindrome(str)) {
+            System.out.println("Это палиндром");
+        } else {
+            System.out.println("Это не палиндром");           
         }
     }
 

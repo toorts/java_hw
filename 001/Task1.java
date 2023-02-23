@@ -4,20 +4,19 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        try (Scanner scan = new Scanner(System.in)) {
-            System.out.print("Enter a number: ");
-            int n = scan.nextInt();
-            scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = scan.nextInt();
+        scan.close();
 
-            int triangularNumber = n * (n + 1) / 2;
+        int triangularNumber = n * (n + 1) / 2;
 
-            int factorial = 1;
-            for (int i = 1; i <= n; i++) {
-                factorial *= i;
-            }
-
-            System.out.println("The " + n + "th triangular number is " + triangularNumber);
-            System.out.println(n + "! = " + factorial);
+        int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+             factorial *= i;
         }
+
+        System.out.println("The " + n + "th triangular number is " + triangularNumber);
+        System.out.println(n + "! = " + factorial);
     }
 }
